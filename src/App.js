@@ -1,14 +1,22 @@
 import './App.css';
-import Eventhandlings from './Eventhandlings';
+import Mounting from './Mounting';
 import Lginform from './Lginform';
-// import Mounting from './Mounting';
+// import Eventhandlings from './Eventhandlings';
+import Secondloginform from './Secondloginform';
+import Calculator from './Calculator';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Mounting/> */}
-      <Eventhandlings/>
+      <Mounting/>
       <Lginform/>
+      <hr/>
+      {/* <Eventhandlings/> */}
+      <hr/>
+      <Secondloginform/>
+
+      <Calculator/>
       
     </div>
   );
