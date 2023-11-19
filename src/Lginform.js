@@ -33,7 +33,7 @@ export default class Lginform extends Component {
       <div style={{backgroundColor:"yellow"}}>
         <form onSubmit={this.login}>
             <input type='text' value={this.state.username} onChange={(event)=>this.onChangeUsername(event.target.value)} placeholder='username' /><br/>
-            <input type='password' value={this.state.password} onChange={(event)=>this.onChangePassword(event.target.value)} placeholder='password' /><br/>
+            <input type='password' value={this.state.password} onChange={(event)=>this.onChangePassword(event.target.value)} placeholder='password' /><br/><br></br>
             <input type='submit' value="login"/>
         </form>
         <div>

@@ -31,6 +31,8 @@ const Secondloginform = () => {
 
             <input type='submit' name="submit" />
         </form>
+        <h3>{data.username}</h3>
+        
       <hr></hr>
     </div>
   )
