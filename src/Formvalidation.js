@@ -35,7 +35,7 @@ const Formvalidation = () => {
     <div>
         <form onSubmit={onSumbitHandler}>
         <input type='text' name="username" value={username} onChange={changeIputhandler}/><br/>
-       {msg2}
+           {msg2 ?<><span>"user name should be  min 5 "</span><br></br></>:null}
         
         <input type='text' name="email" value={email} onChange={changeIputhandler}/><br/>
         <input type='text' name="password" value={password} onChange={changeIputhandler}/><br/>

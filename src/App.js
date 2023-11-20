@@ -1,22 +1,24 @@
 import './App.css';
-// import Mounting from './Mounting';
-// import Lginform from './Lginform';
+import Mounting from './Mounting';
+import Lginform from './Lginform';
 // import Eventhandlings from './Eventhandlings';
-// import Secondloginform from './Secondloginform';
-// import Calculator from './Calculator';
+import Secondloginform from './Secondloginform';
+import Calculator from './Calculator';
 import Formvalidation from './Formvalidation';
+import Userslist from './Userslist';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Mounting/>
+      <Mounting/>
       <Lginform/>
       <hr/>
-      <Eventhandlings/>
+      {/* <Eventhandlings/> */}
       <hr/>
       <Secondloginform/>
-      <Calculator/> */}
+      <Userslist/>
+      <Calculator/>
 
       <Formvalidation/>
 
