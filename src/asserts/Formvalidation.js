@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 
 const Formvalidation = () => {
@@ -10,6 +11,8 @@ const Formvalidation = () => {
         confirmpassword:''
     })
 
+    
+
     const {username,email,password,confirmpassword} = data;
     
    const  changeIputhandler=(e)=>{
@@ -18,8 +21,8 @@ const Formvalidation = () => {
     
     const onSumbitHandler=(e)=>{
         e.preventDefault();
-        if (username.length<=5){
-            setmsg2("user name should be  min 5 ")
+        if (username.length>=5){
+            setmsg2("user name should be  grater then 5 ")
         }
 
         if(password===confirmpassword){
@@ -27,6 +30,10 @@ const Formvalidation = () => {
         }else{
             setmsg1("paswword not matching");
         }
+        
+        axios.post("https://seshanov23-default-rtdb.firebaseio.com/rigister.json",data).then(
+           alert("submited")
+        )
         console.log(data);
     }
     
@@ -35,7 +42,7 @@ const Formvalidation = () => {
     <div>
         <form onSubmit={onSumbitHandler}>
         <input type='text' name="username" value={username} onChange={changeIputhandler}/><br/>
-           {msg2 ?<><span>"user name should be  min 5 "</span><br></br></>:null}
+           {/* {msg2 ?<><span>"user name should be  min 5 "</span><br></br></>:null} */}
         
         <input type='text' name="email" value={email} onChange={changeIputhandler}/><br/>
         <input type='text' name="password" value={password} onChange={changeIputhandler}/><br/>
