@@ -1,11 +1,12 @@
 import './App.css';
-import Mounting from './Mounting';
-import Lginform from './Lginform';
-// import Eventhandlings from './Eventhandlings';
-import Secondloginform from './Secondloginform';
-import Calculator from './Calculator';
-import Formvalidation from './Formvalidation';
-import Userslist from './Userslist';
+import Mounting from './asserts/Mounting';
+import Lginform from './asserts/Lginform';
+// import Eventhandlings from './asserts/Eventhandlings';
+import Secondloginform from './asserts/Secondloginform';
+import Calculator from './asserts/Calculator';
+import Formvalidation from './asserts/Formvalidation';
+import Userslist from "./asserts/Userslist";
+import Getdatafromurl from './asserts/Getdatafromurl';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <hr/>
       <Secondloginform/>
       <Userslist/>
+      <Getdatafromurl/>
       <Calculator/>
 
       <Formvalidation/>

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
  
- const Userslist = () => {
+    const Userslist = () => {
 
     let users=["person1","person2","human3","person4","human5","person6"]
 
@@ -21,7 +21,7 @@ import React from 'react'
     
    return (
      <div>
-         {users.map((items,index)=><li key={items}>{items}</li>)} <hr/>
+         {users.map((items)=><li key={items}>{items}</li>)} <hr/>
          {users.filter(
             (item)=>{
                 if(item.includes("p")){
@@ -41,7 +41,8 @@ import React from 'react'
    )
  }
  
- export default Userslist
-
+  
+ 
+export default Userslist;
  
  

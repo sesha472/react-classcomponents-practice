@@ -13,9 +13,9 @@ const Calculator = () => {
     <div >
         <h1>Calculator</h1>
 
-        <input type='text' onChange={handler} value={data} /><br/>
+        <input type='text'name='data' value={data} onChange={handler}   /><br/>
         <button onClick={()=>setresult(eval(data))}>result</button><br/>
-        <button onClick={()=>{ setresult("")}}>reset</button><br/>
+        <button onClick={()=>{  setresult(null)}}>reset</button><br/>
         <div className='result'> <span>result is </span>{result}</div>
 
        
