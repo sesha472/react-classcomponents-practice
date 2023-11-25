@@ -2,7 +2,7 @@ import React from 'react';
  
     const Userslist = () => {
 
-    let users=["person1","person2","human3","person4","human5","person6"]
+    let users=["person1","person2","human3","person4","human5","person6"];
 
     let perosn=[
         {id:1,
@@ -21,18 +21,21 @@ import React from 'react';
     
    return (
      <div>
-         {users.map((items)=><li key={items}>{items}</li>)} <hr/>
+         {users.map((items,i)=><li key={i}>{items}</li>)} <hr/>
          {users.filter(
             (item)=>{
                 if(item.includes("p")){
-                    return item
                 }
-                }).map(item=><li>{item}</li>)
+                // console.log(item);
+                return item
+
+                }).map(item=><li key={item.id}>{item}</li>)
                 
                 }
          {/*key must be unique */}
+
        
-       <br></br>
+       <br></br><br></br>
 
        {perosn.map(
         (item)=><li key={item.id}>{item.name}</li>
