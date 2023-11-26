@@ -7,7 +7,7 @@ import Showscreensize from './Showscreensize';
 // import Calculator from './asserts/Calculator';
 // import Userslist from "./asserts/Userslist";
 // import Getdatafromurl from './asserts/Getdatafromurl';
-// import Formvalidation from './asserts/Formvalidation';
+import Formvalidation from './asserts/Formvalidation';
 
 
 
@@ -24,7 +24,7 @@ function App() {
       {/* <Getdatafromurl/> */}
       {/* <Calculator/>  */}
 
-      {/* <Formvalidation/> */}
+      <Formvalidation/>
       <Showscreensize/>
 
       
