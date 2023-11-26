@@ -8,6 +8,7 @@ import Showscreensize from './Showscreensize';
 // import Userslist from "./asserts/Userslist";
 // import Getdatafromurl from './asserts/Getdatafromurl';
 import Formvalidation from './asserts/Formvalidation';
+import Reversstring from './asserts/Reversstring';
 
 
 
@@ -24,8 +25,9 @@ function App() {
       {/* <Getdatafromurl/> */}
       {/* <Calculator/>  */}
 
-      <Formvalidation/>
-      <Showscreensize/>
+      {/* <Formvalidation/> */}
+      {/* <Showscreensize/> */}
+      <Reversstring/>
 
       
     </div>
